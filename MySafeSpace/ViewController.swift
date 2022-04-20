@@ -9,27 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let imageView: UIImageView = {
-        let imageView: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width: 150, height: 150))
-        let heartImage = UIImage(systemName:"heart.fill")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = heartImage
-        return imageView
-    }()
+    @IBOutlet var label: UILabel!
+    @IBOutlet var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        view.addSubview(imageView)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
             self.heartbeatAnimation()
         })
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        imageView.center = view.center
     }
     
     func heartbeatAnimation() {
@@ -38,22 +27,28 @@ class ViewController: UIViewController {
             let newDiffY = self.view.frame.height - 200
             let initialDiffX = 150 - self.view.frame.size.width
             let initialDiffY = self.view.frame.height - 150
+            
             UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.1,
                 animations: {
                 self.imageView.frame = CGRect(x: -(newDiffX/2), y: newDiffY/2, width: 200, height: 200)
             })
+            
             UIView.addKeyframe(withRelativeStartTime: 0.1, relativeDuration: 0.1, animations: {
                 self.imageView.frame = CGRect(x: -(initialDiffX/2), y: initialDiffY/2, width: 150, height: 150)
             })
+            
             UIView.addKeyframe(withRelativeStartTime: 0.4, relativeDuration: 0.1, animations: {
                 self.imageView.frame = CGRect(x: -(newDiffX/2), y: newDiffY/2, width: 200, height: 200)
             })
+            
             UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.1, animations: {
                 self.imageView.frame = CGRect(x: -(initialDiffX/2), y: initialDiffY/2, width: 150, height: 150)
             })
+            
             UIView.addKeyframe(withRelativeStartTime: 0.8, relativeDuration: 0.1, animations: {
                 self.imageView.frame = CGRect(x: -(newDiffX/2), y: newDiffY/2, width: 200, height: 200)
             })
+            
             UIView.addKeyframe(withRelativeStartTime: 0.9, relativeDuration: 0.1, animations: {
                 self.imageView.frame = CGRect(x: -(initialDiffX/2), y: initialDiffY/2, width: 150, height: 150)
             })
