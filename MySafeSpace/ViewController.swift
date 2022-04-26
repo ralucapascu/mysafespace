@@ -56,7 +56,7 @@ class ViewController: UIViewController {
             done in
             if done {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                    let viewController = LoginViewController()
+                    let viewController = self.storyboard?.instantiateViewController(withIdentifier: "loginNavController") as! UINavigationController
                     viewController.modalTransitionStyle = .crossDissolve
                     viewController.modalPresentationStyle = .fullScreen
                     self.present(viewController, animated: true)

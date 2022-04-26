@@ -6,7 +6,9 @@ target 'MySafeSpace' do
   use_frameworks!
 
   # Pods for MySafeSpace
-pod 'Firebase/Core'
+pod 'RealmSwift'
 pod 'Firebase/Auth'
-
+pod 'Firebase/Core'
+pod 'RealmSwift'
+pod 'FBSDKLoginKit'
 end
