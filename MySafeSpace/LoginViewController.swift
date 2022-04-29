@@ -51,10 +51,29 @@ class LoginViewController: UIViewController {
         if let token = AccessToken.current, !token.isExpired {
             let token = token.tokenString
             
-            let request = FBSDKLoginKit.GraphRequest(graphPath: "me", parameters: ["fields": "email, name"], tokenString: token, version: nil, httpMethod: .get)
+            let request = FBSDKLoginKit.GraphRequest(graphPath: "me", parameters: ["fields": "email, first_name, last_name"], tokenString: token, version: nil, httpMethod: .get)
             request.start(completion: {completion, result, error in
                 if result != nil, error == nil {
-                    let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homePageVC") as! HomePageViewController
+                    let userData = result as! NSDictionary
+                    // see if the fb logged in user already exists in the database
+                    var user = self.realm.object(ofType: User.self, forPrimaryKey: userData["email"])
+                    if user == nil { // if the user does not exist, add it to the database without password just so that the journal logs can be persisted for the facebook users too
+                        try! self.realm.write {
+                            user = User()
+                            user!.email = userData["email"] as! String
+                            user!.firstName = userData["first_name"] as! String
+                            user!.lastName = userData["last_name"] as! String
+                            self.realm.add(user!)
+                        }
+                    }
+                    
+                    let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+                    let journalLogsNavVC = viewController.viewControllers?[1] as! UINavigationController
+                    let journalEntriesVC = journalLogsNavVC.viewControllers.first as! JournalEntriesViewController
+                    journalEntriesVC.currentUser = user
+                    let homepageNavVC = viewController.viewControllers?[0] as! UINavigationController
+                    let homepageVC = homepageNavVC.viewControllers.first as! HomePageViewController
+                    homepageVC.currentUser = user
                     viewController.modalTransitionStyle = .crossDissolve
                     viewController.modalPresentationStyle = .fullScreen
                     self.present(viewController, animated: true)
@@ -100,11 +119,17 @@ class LoginViewController: UIViewController {
         }
         
         if(!isAnyFieldEmpty) {
-            let user = realm.object(ofType: User.self, forPrimaryKey: email)
+            let user = realm.object(ofType: User.self, forPrimaryKey: email) // get the user that matches the inputted email from the database
             if(user != nil) {
                 if(password == user?.password) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homePageVC") as! HomePageViewController
+                        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+                        let navVC = viewController.viewControllers?[1] as! UINavigationController
+                        let journalEntriesVC = navVC.viewControllers.first as! JournalEntriesViewController
+                        journalEntriesVC.currentUser = user
+                        let homepageNavVC = viewController.viewControllers?[0] as! UINavigationController
+                        let homepageVC = homepageNavVC.viewControllers.first as! HomePageViewController
+                        homepageVC.currentUser = user
                         viewController.modalTransitionStyle = .crossDissolve
                         viewController.modalPresentationStyle = .fullScreen
                         self.present(viewController, animated: true)

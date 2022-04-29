@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7047F35A2815DF580025ABE7 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047F3592815DF580025ABE7 /* HomePageViewController.swift */; };
+		704ED3E2281B1FF500179250 /* BreathingExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */; };
 		705293F6280CA950002D235F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705293F5280CA950002D235F /* LoginViewController.swift */; };
 		705293F728168F6000D84652 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705293F628168F6000D84652 /* JournalEntry.swift */; };
 		706ADAF92814804400EC22FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706ADAF82814804400EC22FB /* User.swift */; };
 		7072554D2810A05000B8A7EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7072554C2810A05000B8A7EC /* GoogleService-Info.plist */; };
+		70A415CD281941E900F42E2F /* JournalEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A415CC281941E900F42E2F /* JournalEntriesViewController.swift */; };
+		70A415CF2819552E00F42E2F /* NewJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A415CE2819552E00F42E2F /* NewJournalEntryViewController.swift */; };
+		70A415D32819764700F42E2F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A415D22819764700F42E2F /* CellView.swift */; };
+		70A415D52819A6C900F42E2F /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */; };
 		70C472E828133D55007FAD6C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C472E728133D55007FAD6C /* SignUpViewController.swift */; };
 		70D054B628007B5B003E0B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D054B528007B5B003E0B28 /* AppDelegate.swift */; };
 		70D054B828007B5B003E0B28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D054B728007B5B003E0B28 /* SceneDelegate.swift */; };
@@ -24,10 +29,15 @@
 
 /* Begin PBXFileReference section */
 		7047F3592815DF580025ABE7 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingExerciseViewController.swift; sourceTree = "<group>"; };
 		705293F5280CA950002D235F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		705293F628168F6000D84652 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		706ADAF82814804400EC22FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7072554C2810A05000B8A7EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70A415CC281941E900F42E2F /* JournalEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntriesViewController.swift; sourceTree = "<group>"; };
+		70A415CE2819552E00F42E2F /* NewJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalEntryViewController.swift; sourceTree = "<group>"; };
+		70A415D22819764700F42E2F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
 		70C472E728133D55007FAD6C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		70D054B228007B5B003E0B28 /* MySafeSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySafeSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D054B528007B5B003E0B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +98,11 @@
 				706ADAF82814804400EC22FB /* User.swift */,
 				7047F3592815DF580025ABE7 /* HomePageViewController.swift */,
 				705293F628168F6000D84652 /* JournalEntry.swift */,
+				70A415CC281941E900F42E2F /* JournalEntriesViewController.swift */,
+				70A415CE2819552E00F42E2F /* NewJournalEntryViewController.swift */,
+				70A415D22819764700F42E2F /* CellView.swift */,
+				70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */,
+				704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */,
 			);
 			path = MySafeSpace;
 			sourceTree = "<group>";
@@ -225,9 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704ED3E2281B1FF500179250 /* BreathingExerciseViewController.swift in Sources */,
+				70A415D32819764700F42E2F /* CellView.swift in Sources */,
 				705293F6280CA950002D235F /* LoginViewController.swift in Sources */,
+				70A415D52819A6C900F42E2F /* JournalEntryViewController.swift in Sources */,
 				7047F35A2815DF580025ABE7 /* HomePageViewController.swift in Sources */,
+				70A415CD281941E900F42E2F /* JournalEntriesViewController.swift in Sources */,
 				705293F728168F6000D84652 /* JournalEntry.swift in Sources */,
+				70A415CF2819552E00F42E2F /* NewJournalEntryViewController.swift in Sources */,
 				70D054BA28007B5B003E0B28 /* ViewController.swift in Sources */,
 				706ADAF92814804400EC22FB /* User.swift in Sources */,
 				70D054B628007B5B003E0B28 /* AppDelegate.swift in Sources */,

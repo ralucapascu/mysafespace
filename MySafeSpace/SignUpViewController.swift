@@ -17,6 +17,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet var errorLabel: UILabel!
     
     let realm = try! Realm()
+    var user: User = User()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,18 +117,26 @@ class SignUpViewController: UIViewController {
         
         if(!isAnyFieldEmpty) {
             errorLabel?.isHidden = true
-            let user: User = User()
-            user.password = password
-            user.email = email
-            user.firstName = firstName
-            user.lastName = lastName
-                    
-            realm.beginWrite()
-            realm.add(user)
-            try! realm.commitWrite()
+            
+            // add new user to the database
+            try! realm.write {
+                let user = User()
+                user.password = password
+                user.email = email
+                user.firstName = firstName
+                user.lastName = lastName
+                self.realm.add(user)
+                self.user = user
+            }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homePageVC") as! HomePageViewController
+                let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+                let navVC = viewController.viewControllers?[1] as! UINavigationController
+                let journalEntriesVC = navVC.viewControllers.first as! JournalEntriesViewController
+                journalEntriesVC.currentUser = self.user
+                let homepageNavVC = viewController.viewControllers?[0] as! UINavigationController
+                let homepageVC = homepageNavVC.viewControllers.first as! HomePageViewController
+                homepageVC.currentUser = self.user
                 viewController.modalTransitionStyle = .crossDissolve
                 viewController.modalPresentationStyle = .fullScreen
                 self.present(viewController, animated: true)
