@@ -17,6 +17,7 @@ class JournalEntryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = journalEntry.dateAdded
         titleLabel.text = journalEntry.title
         textView.text = journalEntry.text
     }

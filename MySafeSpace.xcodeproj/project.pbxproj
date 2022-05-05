@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700C8A462823D14F00090E18 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C8A452823D14F00090E18 /* HoroscopeViewController.swift */; };
+		70332FC828228697000A9A39 /* HoroscopesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC728228697000A9A39 /* HoroscopesViewController.swift */; };
+		70332FCA2822911C000A9A39 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC92822911C000A9A39 /* Horoscope.swift */; };
+		70332FCE2822F925000A9A39 /* HoroscopeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FCD2822F925000A9A39 /* HoroscopeCollectionViewCell.swift */; };
 		7047F35A2815DF580025ABE7 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047F3592815DF580025ABE7 /* HomePageViewController.swift */; };
 		704ED3E2281B1FF500179250 /* BreathingExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */; };
 		705293F6280CA950002D235F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705293F5280CA950002D235F /* LoginViewController.swift */; };
@@ -24,10 +28,16 @@
 		70D054BD28007B5B003E0B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D054BB28007B5B003E0B28 /* Main.storyboard */; };
 		70D054BF28007B5B003E0B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D054BE28007B5B003E0B28 /* Assets.xcassets */; };
 		70D054C228007B5B003E0B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */; };
+		70D37C77281BFCDD0053FC79 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37C76281BFCDD0053FC79 /* MusicPlayerViewController.swift */; };
+		70D37C7C281C16A50053FC79 /* music_meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70D37C7B281C16A50053FC79 /* music_meditation.mp3 */; };
 		DFC660A5B6B179A6B5845554 /* Pods_MySafeSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6559C9873489782BBEB067 /* Pods_MySafeSpace.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700C8A452823D14F00090E18 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
+		70332FC728228697000A9A39 /* HoroscopesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopesViewController.swift; sourceTree = "<group>"; };
+		70332FC92822911C000A9A39 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		70332FCD2822F925000A9A39 /* HoroscopeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7047F3592815DF580025ABE7 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingExerciseViewController.swift; sourceTree = "<group>"; };
 		705293F5280CA950002D235F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		70D054BE28007B5B003E0B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D054C128007B5B003E0B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D054C328007B5B003E0B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D37C76281BFCDD0053FC79 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		70D37C7B281C16A50053FC79 /* music_meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music_meditation.mp3; sourceTree = "<group>"; };
 		8B142799ED89734CFDBA6410 /* Pods-MySafeSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySafeSpace.release.xcconfig"; path = "Target Support Files/Pods-MySafeSpace/Pods-MySafeSpace.release.xcconfig"; sourceTree = "<group>"; };
 		BC6559C9873489782BBEB067 /* Pods_MySafeSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySafeSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14B901592DD7953DF1B4776 /* Pods-MySafeSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySafeSpace.debug.xcconfig"; path = "Target Support Files/Pods-MySafeSpace/Pods-MySafeSpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +97,7 @@
 		70D054B428007B5B003E0B28 /* MySafeSpace */ = {
 			isa = PBXGroup;
 			children = (
+				70D37C7B281C16A50053FC79 /* music_meditation.mp3 */,
 				7072554C2810A05000B8A7EC /* GoogleService-Info.plist */,
 				70D054B528007B5B003E0B28 /* AppDelegate.swift */,
 				70D054B728007B5B003E0B28 /* SceneDelegate.swift */,
@@ -100,9 +113,14 @@
 				705293F628168F6000D84652 /* JournalEntry.swift */,
 				70A415CC281941E900F42E2F /* JournalEntriesViewController.swift */,
 				70A415CE2819552E00F42E2F /* NewJournalEntryViewController.swift */,
+				70332FCD2822F925000A9A39 /* HoroscopeCollectionViewCell.swift */,
+				70332FC728228697000A9A39 /* HoroscopesViewController.swift */,
+				700C8A452823D14F00090E18 /* HoroscopeViewController.swift */,
+				70332FC92822911C000A9A39 /* Horoscope.swift */,
 				70A415D22819764700F42E2F /* CellView.swift */,
 				70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */,
 				704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */,
+				70D37C76281BFCDD0053FC79 /* MusicPlayerViewController.swift */,
 			);
 			path = MySafeSpace;
 			sourceTree = "<group>";
@@ -184,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D37C7C281C16A50053FC79 /* music_meditation.mp3 in Resources */,
 				70D054C228007B5B003E0B28 /* LaunchScreen.storyboard in Resources */,
 				7072554D2810A05000B8A7EC /* GoogleService-Info.plist in Resources */,
 				70D054BF28007B5B003E0B28 /* Assets.xcassets in Resources */,
@@ -243,15 +262,20 @@
 				704ED3E2281B1FF500179250 /* BreathingExerciseViewController.swift in Sources */,
 				70A415D32819764700F42E2F /* CellView.swift in Sources */,
 				705293F6280CA950002D235F /* LoginViewController.swift in Sources */,
+				70D37C77281BFCDD0053FC79 /* MusicPlayerViewController.swift in Sources */,
 				70A415D52819A6C900F42E2F /* JournalEntryViewController.swift in Sources */,
 				7047F35A2815DF580025ABE7 /* HomePageViewController.swift in Sources */,
 				70A415CD281941E900F42E2F /* JournalEntriesViewController.swift in Sources */,
 				705293F728168F6000D84652 /* JournalEntry.swift in Sources */,
+				70332FC828228697000A9A39 /* HoroscopesViewController.swift in Sources */,
+				700C8A462823D14F00090E18 /* HoroscopeViewController.swift in Sources */,
 				70A415CF2819552E00F42E2F /* NewJournalEntryViewController.swift in Sources */,
 				70D054BA28007B5B003E0B28 /* ViewController.swift in Sources */,
 				706ADAF92814804400EC22FB /* User.swift in Sources */,
+				70332FCA2822911C000A9A39 /* Horoscope.swift in Sources */,
 				70D054B628007B5B003E0B28 /* AppDelegate.swift in Sources */,
 				70D054B828007B5B003E0B28 /* SceneDelegate.swift in Sources */,
+				70332FCE2822F925000A9A39 /* HoroscopeCollectionViewCell.swift in Sources */,
 				70C472E828133D55007FAD6C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

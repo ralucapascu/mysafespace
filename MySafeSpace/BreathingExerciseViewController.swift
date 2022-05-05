@@ -116,7 +116,7 @@ class BreathingExcerciseViewController: UIViewController {
         let animationGroup = CAAnimationGroup()
         animationGroup.animations = [keepAnimationInPlace, scaleAnimation(scaleValue: scaleValue)]
         animationGroup.duration = 10
-        animationGroup.repeatCount = 8
+        animationGroup.repeatCount = 4
         return animationGroup
     }
     
@@ -139,7 +139,7 @@ class BreathingExcerciseViewController: UIViewController {
         hideInhaleTextAnimation.values = [0, 1]
         hideInhaleTextAnimation.keyTimes = [0, 0.68]
         hideInhaleTextAnimation.duration = 10
-        hideInhaleTextAnimation.repeatCount = 8
+        hideInhaleTextAnimation.repeatCount = 4
         return hideInhaleTextAnimation
     }
     
@@ -148,7 +148,7 @@ class BreathingExcerciseViewController: UIViewController {
         hideHoldTextAnimation.values = [0, 0, 1, 1, 0]
         hideHoldTextAnimation.keyTimes = [0, 0.34, 0.35, 0.49, 0.5]
         hideHoldTextAnimation.duration = 10
-        hideHoldTextAnimation.repeatCount = 8
+        hideHoldTextAnimation.repeatCount = 4
         return hideHoldTextAnimation
     }
     
@@ -157,7 +157,7 @@ class BreathingExcerciseViewController: UIViewController {
         hideExhaleTextAnimation.values = [1, 0]
         hideExhaleTextAnimation.keyTimes = [0, 1]
         hideExhaleTextAnimation.duration = 10
-        hideExhaleTextAnimation.repeatCount = 8
+        hideExhaleTextAnimation.repeatCount = 4
         return hideExhaleTextAnimation
     }
     
