@@ -9,6 +9,8 @@ target 'MySafeSpace' do
 pod 'RealmSwift'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
+pod 'Firebase/Storage'
 pod 'RealmSwift'
-pod 'FBSDKLoginKit'
+pod 'FBSDKLoginKit'
+pod 'iCarousel'
 end
