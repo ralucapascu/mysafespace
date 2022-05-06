@@ -49,8 +49,9 @@ class JournalEntriesViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = currentUser.journalEntries[indexPath.row].dateAdded + " - " + currentUser.journalEntries[indexPath.row].title
-        cell.detailTextLabel?.text = currentUser.journalEntries[indexPath.row].text
+		let index = currentUser.journalEntries.count - indexPath.row - 1
+        cell.textLabel?.text = currentUser.journalEntries[index].dateAdded + " - " + currentUser.journalEntries[index].title
+        cell.detailTextLabel?.text = currentUser.journalEntries[index].text
         return cell
     }
     

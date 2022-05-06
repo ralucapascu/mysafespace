@@ -2,6 +2,7 @@
 // AppDelegate.swift
 import UIKit
 import FBSDKCoreKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -9,6 +10,7 @@ func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 ) -> Bool {
+    FirebaseApp.configure()                                         
     ApplicationDelegate.shared.application(
         application,
         didFinishLaunchingWithOptions: launchOptions

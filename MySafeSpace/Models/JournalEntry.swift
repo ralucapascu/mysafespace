@@ -9,8 +9,10 @@ import Foundation
 import RealmSwift
 
 class JournaEntry: Object {
+	@Persisted(primaryKey: true) var journalId: Int = 0
     @Persisted var title: String = ""
     @Persisted var text: String = ""
     @Persisted var dateAdded: String = ""
     @Persisted(originProperty: "journalEntries") var user: LinkingObjects<User>
+	@Persisted var journalPhotos = RealmSwift.List<Photo>()
 }

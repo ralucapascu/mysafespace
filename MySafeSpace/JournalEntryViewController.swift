@@ -20,5 +20,13 @@ class JournalEntryViewController: UIViewController {
         self.title = journalEntry.dateAdded
         titleLabel.text = journalEntry.title
         textView.text = journalEntry.text
+		
+		navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Go to gallery", style: .done, target: self, action: #selector(didTapGoToGalleryButton))
     }
+	
+	@objc func didTapGoToGalleryButton() {
+		let viewController = self.storyboard?.instantiateViewController(withIdentifier: "galleryVC") as! JournalGalleryViewController
+		viewController.journalEntry = self.journalEntry
+		self.navigationController?.pushViewController(viewController, animated: true)
+	}
 }
