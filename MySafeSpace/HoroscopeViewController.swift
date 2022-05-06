@@ -39,7 +39,6 @@ class HoroscopeViewController: UIViewController {
 
             guard let item = try? jsonDecoder.decode(Horoscope.self, from: data) else { return }
             welf.horoscope = item.horoscope
-            print(item)
             DispatchQueue.main.async {
                 welf.loadingSpinner.stopAnimating()
                 welf.textView.text = welf.horoscope

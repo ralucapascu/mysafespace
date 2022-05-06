@@ -403,9 +403,6 @@
                                                         <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system">
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="didTapStartExerciseButton:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="3sG-Cf-lJN"/>
-                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling anxious? Take up this breathing exercise to relax yourself." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbb-DD-Jqw">
                                                         <rect key="frame" x="20" y="20" width="224" height="72"/>
@@ -422,7 +419,7 @@
                                                     <constraint firstAttribute="height" constant="128" id="O1M-fk-fix"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="didTapBreathingExercise:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="nHB-nd-cOE"/>
+                                                    <action selector="didTapBreathingExercise:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="Qem-2T-09q"/>
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-Mi-tTf" customClass="UIControl">
@@ -435,9 +432,6 @@
                                                         <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system">
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="didTapMusicPlayerButton:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="eTT-oY-9US"/>
-                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling stressed? Listen to some relaxing music and unwind." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFq-fe-vdX">
                                                         <rect key="frame" x="20" y="20" width="224" height="72"/>
@@ -454,7 +448,7 @@
                                                     <constraint firstItem="pFq-fe-vdX" firstAttribute="leading" secondItem="ccj-Mi-tTf" secondAttribute="leading" constant="20" id="wTm-5m-bCl"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="didTapMusicPlayerView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="xYF-yH-jfY"/>
+                                                    <action selector="didTapMusicPlayerView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="af7-iT-51A"/>
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-KH-Xll" customClass="UIControl">
@@ -483,17 +477,48 @@
                                                     <constraint firstAttribute="height" constant="128" id="Trc-hb-5hv"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="didTapHoroscopesView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="X4B-l9-ZZG"/>
+                                                    <action selector="didTapHoroscopesView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="D1h-QZ-scv"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bM1-gO-VoE" customClass="UIControl">
+                                                <rect key="frame" x="80" y="675.5" width="254" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXB-ze-8aN">
+                                                        <rect key="frame" x="192" y="89" width="40" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system">
+                                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See how you have been feeling based on your journal logs!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNL-In-eYE">
+                                                        <rect key="frame" x="20" y="20" width="224" height="72"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0013866732420000001" green="0.050683140850000002" blue="0.303030303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="1yQ-87-90k"/>
+                                                    <constraint firstItem="DNL-In-eYE" firstAttribute="leading" secondItem="bM1-gO-VoE" secondAttribute="leading" constant="20" id="7ol-zo-Jvh"/>
+                                                    <constraint firstItem="DNL-In-eYE" firstAttribute="top" secondItem="bM1-gO-VoE" secondAttribute="top" constant="20" id="N68-QZ-8CW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DNL-In-eYE" secondAttribute="trailing" constant="10" id="Q0V-EA-Lxn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="didTapSentimentAnalyserView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="tCo-og-d21"/>
                                                 </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="ccj-Mi-tTf" firstAttribute="leading" secondItem="qHA-sR-fpq" secondAttribute="leading" constant="80" id="FJD-BA-Azt"/>
+                                            <constraint firstItem="bM1-gO-VoE" firstAttribute="top" secondItem="eOs-KH-Xll" secondAttribute="bottom" constant="70" id="Fjk-bq-f1J"/>
                                             <constraint firstItem="eOs-KH-Xll" firstAttribute="centerX" secondItem="qHA-sR-fpq" secondAttribute="centerX" id="MEO-Uj-rkb"/>
                                             <constraint firstAttribute="trailing" secondItem="ccj-Mi-tTf" secondAttribute="trailing" constant="80" id="PVj-Ei-FPM"/>
                                             <constraint firstItem="O7N-uy-Cfh" firstAttribute="leading" secondItem="qHA-sR-fpq" secondAttribute="leading" constant="25" id="UDr-OM-edG"/>
                                             <constraint firstItem="ccj-Mi-tTf" firstAttribute="top" secondItem="xbb-pP-Ttb" secondAttribute="bottom" constant="70" id="UVx-N1-wFT"/>
+                                            <constraint firstAttribute="trailing" secondItem="bM1-gO-VoE" secondAttribute="trailing" constant="80" id="X9m-Lr-66P"/>
                                             <constraint firstAttribute="trailing" secondItem="xbb-pP-Ttb" secondAttribute="trailing" constant="80" id="XQb-uZ-zjT"/>
                                             <constraint firstItem="xbb-pP-Ttb" firstAttribute="top" secondItem="O7N-uy-Cfh" secondAttribute="bottom" constant="40" id="ZsJ-jm-cFN"/>
                                             <constraint firstAttribute="trailing" secondItem="eOs-KH-Xll" secondAttribute="trailing" constant="80" id="bEr-ye-vp9"/>
@@ -503,6 +528,7 @@
                                             <constraint firstItem="eOs-KH-Xll" firstAttribute="centerX" secondItem="qHA-sR-fpq" secondAttribute="centerX" id="oUd-bI-F0F"/>
                                             <constraint firstItem="eOs-KH-Xll" firstAttribute="top" secondItem="ccj-Mi-tTf" secondAttribute="bottom" constant="70" id="sbo-PR-0Bx"/>
                                             <constraint firstItem="xbb-pP-Ttb" firstAttribute="leading" secondItem="qHA-sR-fpq" secondAttribute="leading" constant="80" id="tSU-F4-qyh"/>
+                                            <constraint firstItem="bM1-gO-VoE" firstAttribute="leading" secondItem="qHA-sR-fpq" secondAttribute="leading" constant="80" id="yyt-0n-iCi"/>
                                             <constraint firstItem="O7N-uy-Cfh" firstAttribute="top" secondItem="qHA-sR-fpq" secondAttribute="top" constant="10" id="zRm-TL-BYR"/>
                                         </constraints>
                                     </view>
@@ -536,6 +562,7 @@
                         <outlet property="helloUserLabel" destination="O7N-uy-Cfh" id="I2l-JI-Tg1"/>
                         <outlet property="horoscopesView" destination="eOs-KH-Xll" id="oIS-Ck-yiF"/>
                         <outlet property="musicPlayerView" destination="ccj-Mi-tTf" id="lA3-Ga-ZeH"/>
+                        <outlet property="sentimentAnalyserView" destination="bM1-gO-VoE" id="EiD-DL-neD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvU-bV-OpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -850,6 +877,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHc-49-gGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1634.7826086956522" y="2420.7589285714284"/>
+        </scene>
+        <!--Sentiment Analyser View Controller-->
+        <scene sceneID="dkH-Wi-tpw">
+            <objects>
+                <viewController storyboardIdentifier="sentimentAnalyserVC" id="evT-km-K76" customClass="SentimentAnalyserViewController" customModule="MySafeSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHH-Y5-Rs9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="baW-lo-Z6x"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcl-s7-cTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="3092"/>
         </scene>
         <!--Journal Gallery View Controller-->
         <scene sceneID="zVV-c9-me9">

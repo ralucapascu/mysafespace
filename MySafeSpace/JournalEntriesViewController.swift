@@ -57,9 +57,9 @@ class JournalEntriesViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+		let index = currentUser.journalEntries.count - indexPath.row - 1
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "journalEntryVC") as! JournalEntryViewController
-        viewController.journalEntry = currentUser.journalEntries[indexPath.row]
+        viewController.journalEntry = currentUser.journalEntries[index]
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
