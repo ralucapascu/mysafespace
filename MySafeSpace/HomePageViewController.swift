@@ -11,7 +11,7 @@ class HomePageViewController: UIViewController {
     
     @IBOutlet weak var helloUserLabel: UILabel!
     @IBOutlet weak var breathingExerciseView: UIControl!
-    @IBOutlet weak var musicPlayerView: UIControl!
+    @IBOutlet weak var videoPlayerView: UIControl!
     @IBOutlet weak var horoscopesView: UIControl!
 	@IBOutlet weak var sentimentAnalyserView: UIControl!
 	
@@ -23,7 +23,7 @@ class HomePageViewController: UIViewController {
         helloUserLabel.text = "Hello, " + currentUser.firstName + "!"
         
         breathingExerciseView.layer.cornerRadius = 30
-        musicPlayerView.layer.cornerRadius = 30
+		videoPlayerView.layer.cornerRadius = 30
         horoscopesView.layer.cornerRadius = 30
 		sentimentAnalyserView.layer.cornerRadius = 30
     }
@@ -34,8 +34,8 @@ class HomePageViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 	
-    @IBAction func didTapMusicPlayerView(_ sender: Any) {
-        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "musicPlayerVC") as! MusicPlayerViewController
+    @IBAction func didTapVideoPlayerView(_ sender: Any) {
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "videoPlayerVC") as! VideoPlayerViewController
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 	

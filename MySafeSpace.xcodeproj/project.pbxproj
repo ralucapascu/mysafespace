@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7006523B2825A68E0064AD7A /* SentimentAnalyserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */; };
 		7006523D2825A7690064AD7A /* SentimentAnalyserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */; };
+		700B076B28268AEE0025D49E /* howToRelax.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 700B076A28268AEE0025D49E /* howToRelax.mp4 */; };
 		700C8A462823D14F00090E18 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C8A452823D14F00090E18 /* HoroscopeViewController.swift */; };
 		70332FC828228697000A9A39 /* HoroscopesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC728228697000A9A39 /* HoroscopesViewController.swift */; };
 		70332FCA2822911C000A9A39 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC92822911C000A9A39 /* Horoscope.swift */; };
@@ -35,7 +36,7 @@
 		70D054BD28007B5B003E0B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D054BB28007B5B003E0B28 /* Main.storyboard */; };
 		70D054BF28007B5B003E0B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D054BE28007B5B003E0B28 /* Assets.xcassets */; };
 		70D054C228007B5B003E0B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */; };
-		70D37C77281BFCDD0053FC79 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37C76281BFCDD0053FC79 /* MusicPlayerViewController.swift */; };
+		70D37C77281BFCDD0053FC79 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */; };
 		70D37C7C281C16A50053FC79 /* music_meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70D37C7B281C16A50053FC79 /* music_meditation.mp3 */; };
 		DFC660A5B6B179A6B5845554 /* Pods_MySafeSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6559C9873489782BBEB067 /* Pods_MySafeSpace.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyserViewController.swift; sourceTree = "<group>"; };
 		7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyserResult.swift; sourceTree = "<group>"; };
+		700B076A28268AEE0025D49E /* howToRelax.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = howToRelax.mp4; sourceTree = "<group>"; };
 		700C8A452823D14F00090E18 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
 		70332FC728228697000A9A39 /* HoroscopesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopesViewController.swift; sourceTree = "<group>"; };
 		70332FC92822911C000A9A39 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		70D054BE28007B5B003E0B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D054C128007B5B003E0B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D054C328007B5B003E0B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70D37C76281BFCDD0053FC79 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		70D37C7B281C16A50053FC79 /* music_meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music_meditation.mp3; sourceTree = "<group>"; };
 		8B142799ED89734CFDBA6410 /* Pods-MySafeSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySafeSpace.release.xcconfig"; path = "Target Support Files/Pods-MySafeSpace/Pods-MySafeSpace.release.xcconfig"; sourceTree = "<group>"; };
 		BC6559C9873489782BBEB067 /* Pods_MySafeSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySafeSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 				70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */,
 				70D054C328007B5B003E0B28 /* Info.plist */,
 				705293F5280CA950002D235F /* LoginViewController.swift */,
+				700B076A28268AEE0025D49E /* howToRelax.mp4 */,
 				70597BCB2825118D00AAA319 /* JournalGalleryViewController.swift */,
 				70C472E728133D55007FAD6C /* SignUpViewController.swift */,
 				7047F3592815DF580025ABE7 /* HomePageViewController.swift */,
@@ -146,7 +149,7 @@
 				70A415D22819764700F42E2F /* CellView.swift */,
 				70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */,
 				704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */,
-				70D37C76281BFCDD0053FC79 /* MusicPlayerViewController.swift */,
+				70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */,
 				70597BD42825529100AAA319 /* PhotoViewController.swift */,
 				7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */,
 				7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */,
@@ -233,6 +236,7 @@
 			files = (
 				70D37C7C281C16A50053FC79 /* music_meditation.mp3 in Resources */,
 				70D054C228007B5B003E0B28 /* LaunchScreen.storyboard in Resources */,
+				700B076B28268AEE0025D49E /* howToRelax.mp4 in Resources */,
 				7072554D2810A05000B8A7EC /* GoogleService-Info.plist in Resources */,
 				70D054BF28007B5B003E0B28 /* Assets.xcassets in Resources */,
 				70D054BD28007B5B003E0B28 /* Main.storyboard in Resources */,
@@ -292,7 +296,7 @@
 				70A415D32819764700F42E2F /* CellView.swift in Sources */,
 				70597BD52825529100AAA319 /* PhotoViewController.swift in Sources */,
 				705293F6280CA950002D235F /* LoginViewController.swift in Sources */,
-				70D37C77281BFCDD0053FC79 /* MusicPlayerViewController.swift in Sources */,
+				70D37C77281BFCDD0053FC79 /* VideoPlayerViewController.swift in Sources */,
 				7006523B2825A68E0064AD7A /* SentimentAnalyserViewController.swift in Sources */,
 				70597BCF28251EC900AAA319 /* Photo.swift in Sources */,
 				70A415D52819A6C900F42E2F /* JournalEntryViewController.swift in Sources */,

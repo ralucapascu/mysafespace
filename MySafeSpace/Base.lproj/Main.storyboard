@@ -448,7 +448,7 @@
                                                     <constraint firstItem="pFq-fe-vdX" firstAttribute="leading" secondItem="ccj-Mi-tTf" secondAttribute="leading" constant="20" id="wTm-5m-bCl"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="didTapMusicPlayerView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="af7-iT-51A"/>
+                                                    <action selector="didTapVideoPlayerView:" destination="zgZ-WS-W0p" eventType="touchUpInside" id="jAz-CC-RSK"/>
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-KH-Xll" customClass="UIControl">
@@ -561,8 +561,8 @@
                         <outlet property="breathingExerciseView" destination="xbb-pP-Ttb" id="3PE-Kr-l0q"/>
                         <outlet property="helloUserLabel" destination="O7N-uy-Cfh" id="I2l-JI-Tg1"/>
                         <outlet property="horoscopesView" destination="eOs-KH-Xll" id="oIS-Ck-yiF"/>
-                        <outlet property="musicPlayerView" destination="ccj-Mi-tTf" id="lA3-Ga-ZeH"/>
                         <outlet property="sentimentAnalyserView" destination="bM1-gO-VoE" id="EiD-DL-neD"/>
+                        <outlet property="videoPlayerView" destination="ccj-Mi-tTf" id="uYd-At-yHn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvU-bV-OpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -679,61 +679,13 @@
             </objects>
             <point key="canvasLocation" x="1596" y="1716"/>
         </scene>
-        <!--Music Player View Controller-->
-        <scene sceneID="z2R-pg-oMB">
+        <!--AV Player View Controller-->
+        <scene sceneID="5W9-cT-Hgd">
             <objects>
-                <viewController storyboardIdentifier="musicPlayerVC" id="iNv-f3-y7K" customClass="MusicPlayerViewController" customModule="MySafeSpace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7gS-61-ynK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditation" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-YZ-beS">
-                                <rect key="frame" x="30" y="64" width="354" height="354"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="354" id="otP-9a-8Hu"/>
-                                </constraints>
-                            </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dz5-pM-Apf">
-                                <rect key="frame" x="48" y="668" width="318" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="lHc-dl-U9Z"/>
-                                </constraints>
-                            </slider>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-mZ-PPD">
-                                <rect key="frame" x="182" y="705" width="50" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="2Yy-o2-5di"/>
-                                    <constraint firstAttribute="height" constant="38" id="fpx-ar-Rzr"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system">
-                                    <color key="baseBackgroundColor" red="0.0013866732420000001" green="0.050683140850000002" blue="0.303030303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapPlayPauseButton:" destination="iNv-f3-y7K" eventType="touchUpInside" id="j6r-bJ-vbW"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Bta-Vk-Nyu"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="C9R-mZ-PPD" firstAttribute="centerX" secondItem="7gS-61-ynK" secondAttribute="centerX" id="9xb-uA-Xtm"/>
-                            <constraint firstItem="Bta-Vk-Nyu" firstAttribute="trailing" secondItem="MeH-YZ-beS" secondAttribute="trailing" constant="30" id="LDd-Eg-2gP"/>
-                            <constraint firstItem="dz5-pM-Apf" firstAttribute="centerX" secondItem="7gS-61-ynK" secondAttribute="centerX" id="VaZ-rE-f81"/>
-                            <constraint firstItem="Bta-Vk-Nyu" firstAttribute="trailing" secondItem="dz5-pM-Apf" secondAttribute="trailing" constant="50" id="b3u-fA-34C"/>
-                            <constraint firstItem="MeH-YZ-beS" firstAttribute="leading" secondItem="Bta-Vk-Nyu" secondAttribute="leading" constant="30" id="evn-6a-vZL"/>
-                            <constraint firstItem="MeH-YZ-beS" firstAttribute="top" secondItem="Bta-Vk-Nyu" secondAttribute="top" constant="20" id="n77-d4-2I1"/>
-                            <constraint firstItem="dz5-pM-Apf" firstAttribute="leading" secondItem="Bta-Vk-Nyu" secondAttribute="leading" constant="50" id="uvU-M0-VfS"/>
-                            <constraint firstItem="dz5-pM-Apf" firstAttribute="top" secondItem="MeH-YZ-beS" secondAttribute="bottom" constant="250" id="wBY-sR-ahg"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="timeSlider" destination="dz5-pM-Apf" id="61E-OJ-nAK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xOP-Iy-lZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <avPlayerViewController storyboardIdentifier="videoPlayerVC" videoGravity="AVLayerVideoGravityResizeAspect" id="3R9-67-w9b" customClass="VideoPlayerViewController" customModule="MySafeSpace" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3r-jt-5e9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-881" y="2421"/>
+            <point key="canvasLocation" x="-906" y="2421"/>
         </scene>
         <!--Breathing Excercise View Controller-->
         <scene sceneID="G4H-NL-bqT">
@@ -885,9 +837,24 @@
                     <view key="view" contentMode="scaleToFill" id="KHH-Y5-Rs9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to add journal entries first." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62l-3L-jrR">
+                                <rect key="frame" x="50" y="436" width="314" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="baW-lo-Z6x"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="62l-3L-jrR" firstAttribute="centerX" secondItem="KHH-Y5-Rs9" secondAttribute="centerX" id="Sv5-WI-20P"/>
+                            <constraint firstItem="62l-3L-jrR" firstAttribute="centerY" secondItem="KHH-Y5-Rs9" secondAttribute="centerY" id="Z6R-bz-Oeg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="62l-3L-jrR" id="uWL-LU-JpB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcl-s7-cTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1207,7 +1174,6 @@
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="libra" width="1280" height="1069"/>
-        <image name="meditation" width="3000" height="2000"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
