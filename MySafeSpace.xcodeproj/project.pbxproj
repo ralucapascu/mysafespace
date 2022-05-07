@@ -98,9 +98,160 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		700B07742826F48E0025D49E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				700B07812826F78F0025D49E /* Others */,
+				700B07802826F7810025D49E /* VideoPlayer */,
+				700B077F2826F7270025D49E /* BreathingExercise */,
+				700B077E2826F6F80025D49E /* Homepage */,
+				700B077D2826F69C0025D49E /* LoginAndSignUp */,
+				700B077C2826F6830025D49E /* SentimentAnalyser */,
+				700B07792826F5D90025D49E /* Settings */,
+				700B07782826F58C0025D49E /* Journal */,
+				700B07762826F5500025D49E /* Horoscope */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		700B07752826F5300025D49E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				700B077B2826F6230025D49E /* Settings */,
+				700B077A2826F5FC0025D49E /* Journal */,
+				700B07772826F56E0025D49E /* Horoscope */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		700B07762826F5500025D49E /* Horoscope */ = {
+			isa = PBXGroup;
+			children = (
+				700C8A452823D14F00090E18 /* HoroscopeViewController.swift */,
+				70332FC728228697000A9A39 /* HoroscopesViewController.swift */,
+			);
+			path = Horoscope;
+			sourceTree = "<group>";
+		};
+		700B07772826F56E0025D49E /* Horoscope */ = {
+			isa = PBXGroup;
+			children = (
+				70332FCD2822F925000A9A39 /* HoroscopeCollectionViewCell.swift */,
+			);
+			path = Horoscope;
+			sourceTree = "<group>";
+		};
+		700B07782826F58C0025D49E /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				70597BD0282520FE00AAA319 /* EditImageViewController.swift */,
+				70597BD42825529100AAA319 /* PhotoViewController.swift */,
+				70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */,
+				70A415CE2819552E00F42E2F /* NewJournalEntryViewController.swift */,
+				70597BCB2825118D00AAA319 /* JournalGalleryViewController.swift */,
+				70A415CC281941E900F42E2F /* JournalEntriesViewController.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		700B07792826F5D90025D49E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				700B07702826C31D0025D49E /* SettingsViewController.swift */,
+				700B07722826D2170025D49E /* ChangePasswordViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		700B077A2826F5FC0025D49E /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				70A415D22819764700F42E2F /* CellView.swift */,
+				70597BD22825387500AAA319 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		700B077B2826F6230025D49E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		700B077C2826F6830025D49E /* SentimentAnalyser */ = {
+			isa = PBXGroup;
+			children = (
+				7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */,
+			);
+			path = SentimentAnalyser;
+			sourceTree = "<group>";
+		};
+		700B077D2826F69C0025D49E /* LoginAndSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				705293F5280CA950002D235F /* LoginViewController.swift */,
+				70C472E728133D55007FAD6C /* SignUpViewController.swift */,
+			);
+			path = LoginAndSignUp;
+			sourceTree = "<group>";
+		};
+		700B077E2826F6F80025D49E /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				7047F3592815DF580025ABE7 /* HomePageViewController.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		700B077F2826F7270025D49E /* BreathingExercise */ = {
+			isa = PBXGroup;
+			children = (
+				704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */,
+			);
+			path = BreathingExercise;
+			sourceTree = "<group>";
+		};
+		700B07802826F7810025D49E /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		700B07812826F78F0025D49E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				70D054B928007B5B003E0B28 /* ViewController.swift */,
+				700B076C2826BE610025D49E /* WebViewViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		700B07822826F7CF0025D49E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				700B076A28268AEE0025D49E /* howToRelax.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		700B07832826F88C0025D49E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				70D054BB28007B5B003E0B28 /* Main.storyboard */,
+				70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		70597BCD28251E4000AAA319 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */,
+				70332FC92822911C000A9A39 /* Horoscope.swift */,
 				705293F628168F6000D84652 /* JournalEntry.swift */,
 				706ADAF82814804400EC22FB /* User.swift */,
 				70597BCE28251EC900AAA319 /* Photo.swift */,
@@ -129,39 +280,16 @@
 		70D054B428007B5B003E0B28 /* MySafeSpace */ = {
 			isa = PBXGroup;
 			children = (
+				700B07832826F88C0025D49E /* Storyboards */,
+				700B07822826F7CF0025D49E /* Resources */,
+				700B07752826F5300025D49E /* Views */,
+				700B07742826F48E0025D49E /* Controllers */,
 				70597BCD28251E4000AAA319 /* Models */,
 				7072554C2810A05000B8A7EC /* GoogleService-Info.plist */,
 				70D054B528007B5B003E0B28 /* AppDelegate.swift */,
 				70D054B728007B5B003E0B28 /* SceneDelegate.swift */,
-				70D054B928007B5B003E0B28 /* ViewController.swift */,
-				70D054BB28007B5B003E0B28 /* Main.storyboard */,
-				700B07702826C31D0025D49E /* SettingsViewController.swift */,
-				700B07722826D2170025D49E /* ChangePasswordViewController.swift */,
-				700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */,
-				700B076C2826BE610025D49E /* WebViewViewController.swift */,
-				70597BD22825387500AAA319 /* PhotoCollectionViewCell.swift */,
 				70D054BE28007B5B003E0B28 /* Assets.xcassets */,
-				70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */,
 				70D054C328007B5B003E0B28 /* Info.plist */,
-				705293F5280CA950002D235F /* LoginViewController.swift */,
-				700B076A28268AEE0025D49E /* howToRelax.mp4 */,
-				70597BCB2825118D00AAA319 /* JournalGalleryViewController.swift */,
-				70C472E728133D55007FAD6C /* SignUpViewController.swift */,
-				7047F3592815DF580025ABE7 /* HomePageViewController.swift */,
-				70A415CC281941E900F42E2F /* JournalEntriesViewController.swift */,
-				70A415CE2819552E00F42E2F /* NewJournalEntryViewController.swift */,
-				70597BD0282520FE00AAA319 /* EditImageViewController.swift */,
-				70332FCD2822F925000A9A39 /* HoroscopeCollectionViewCell.swift */,
-				70332FC728228697000A9A39 /* HoroscopesViewController.swift */,
-				700C8A452823D14F00090E18 /* HoroscopeViewController.swift */,
-				70332FC92822911C000A9A39 /* Horoscope.swift */,
-				70A415D22819764700F42E2F /* CellView.swift */,
-				70A415D42819A6C900F42E2F /* JournalEntryViewController.swift */,
-				704ED3E1281B1FF500179250 /* BreathingExerciseViewController.swift */,
-				70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */,
-				70597BD42825529100AAA319 /* PhotoViewController.swift */,
-				7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */,
-				7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */,
 			);
 			path = MySafeSpace;
 			sourceTree = "<group>";
