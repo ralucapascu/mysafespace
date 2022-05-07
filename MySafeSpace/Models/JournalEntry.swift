@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class JournalEntry: Object {
-	@Persisted(primaryKey: true) var journalId: Int = 0
+	@Persisted var journalId: Int = 0
     @Persisted var title: String = ""
     @Persisted var text: String = ""
     @Persisted var dateAdded: String = ""
