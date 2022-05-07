@@ -10,6 +10,9 @@
 		7006523B2825A68E0064AD7A /* SentimentAnalyserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */; };
 		7006523D2825A7690064AD7A /* SentimentAnalyserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */; };
 		700B076B28268AEE0025D49E /* howToRelax.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 700B076A28268AEE0025D49E /* howToRelax.mp4 */; };
+		700B076D2826BE610025D49E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B076C2826BE610025D49E /* WebViewViewController.swift */; };
+		700B076F2826C2D20025D49E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */; };
+		700B07712826C31D0025D49E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B07702826C31D0025D49E /* SettingsViewController.swift */; };
 		700C8A462823D14F00090E18 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C8A452823D14F00090E18 /* HoroscopeViewController.swift */; };
 		70332FC828228697000A9A39 /* HoroscopesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC728228697000A9A39 /* HoroscopesViewController.swift */; };
 		70332FCA2822911C000A9A39 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC92822911C000A9A39 /* Horoscope.swift */; };
@@ -45,6 +48,9 @@
 		7006523A2825A68E0064AD7A /* SentimentAnalyserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyserViewController.swift; sourceTree = "<group>"; };
 		7006523C2825A7690064AD7A /* SentimentAnalyserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyserResult.swift; sourceTree = "<group>"; };
 		700B076A28268AEE0025D49E /* howToRelax.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = howToRelax.mp4; sourceTree = "<group>"; };
+		700B076C2826BE610025D49E /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		700B07702826C31D0025D49E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		700C8A452823D14F00090E18 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
 		70332FC728228697000A9A39 /* HoroscopesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopesViewController.swift; sourceTree = "<group>"; };
 		70332FC92822911C000A9A39 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				70D054B728007B5B003E0B28 /* SceneDelegate.swift */,
 				70D054B928007B5B003E0B28 /* ViewController.swift */,
 				70D054BB28007B5B003E0B28 /* Main.storyboard */,
+				700B07702826C31D0025D49E /* SettingsViewController.swift */,
+				700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */,
+				700B076C2826BE610025D49E /* WebViewViewController.swift */,
 				70597BD22825387500AAA319 /* PhotoCollectionViewCell.swift */,
 				70D054BE28007B5B003E0B28 /* Assets.xcassets */,
 				70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */,
@@ -294,12 +303,14 @@
 			files = (
 				704ED3E2281B1FF500179250 /* BreathingExerciseViewController.swift in Sources */,
 				70A415D32819764700F42E2F /* CellView.swift in Sources */,
+				700B076F2826C2D20025D49E /* SettingsTableViewCell.swift in Sources */,
 				70597BD52825529100AAA319 /* PhotoViewController.swift in Sources */,
 				705293F6280CA950002D235F /* LoginViewController.swift in Sources */,
 				70D37C77281BFCDD0053FC79 /* VideoPlayerViewController.swift in Sources */,
 				7006523B2825A68E0064AD7A /* SentimentAnalyserViewController.swift in Sources */,
 				70597BCF28251EC900AAA319 /* Photo.swift in Sources */,
 				70A415D52819A6C900F42E2F /* JournalEntryViewController.swift in Sources */,
+				700B076D2826BE610025D49E /* WebViewViewController.swift in Sources */,
 				7047F35A2815DF580025ABE7 /* HomePageViewController.swift in Sources */,
 				70597BCC2825118D00AAA319 /* JournalGalleryViewController.swift in Sources */,
 				70A415CD281941E900F42E2F /* JournalEntriesViewController.swift in Sources */,
@@ -313,6 +324,7 @@
 				70332FCA2822911C000A9A39 /* Horoscope.swift in Sources */,
 				70D054B628007B5B003E0B28 /* AppDelegate.swift in Sources */,
 				70597BD1282520FE00AAA319 /* EditImageViewController.swift in Sources */,
+				700B07712826C31D0025D49E /* SettingsViewController.swift in Sources */,
 				70D054B828007B5B003E0B28 /* SceneDelegate.swift in Sources */,
 				70332FCE2822F925000A9A39 /* HoroscopeCollectionViewCell.swift in Sources */,
 				70C472E828133D55007FAD6C /* SignUpViewController.swift in Sources */,

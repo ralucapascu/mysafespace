@@ -43,7 +43,9 @@ class SentimentAnalyserViewController: UIViewController {
 		var allJournalLogs = "text="
 		for entry in user.journalEntries {
 			allJournalLogs += entry.text
-			allJournalLogs += ". "
+			if entry != user.journalEntries.last {
+				allJournalLogs += ". "
+			}
 		}
 		
 		let postData = allJournalLogs.data(using: String.Encoding.utf8)!
@@ -112,7 +114,7 @@ class SentimentAnalyserViewController: UIViewController {
 			happyRec.path = UIBezierPath(roundedRect: rect3, cornerRadius: 0).cgPath
 			
 			let happyTextLayer = CATextLayer()
-			if self.happyPercString.count > 3 {
+			if self.happyPercString.count > 4 {
 				let happyIndex = self.happyPercString.index(self.happyPercString.startIndex, offsetBy: 4)
 				happyTextLayer.string = self.happyPercString.prefix(upTo: happyIndex) + "%"
 			} else {
@@ -126,7 +128,7 @@ class SentimentAnalyserViewController: UIViewController {
 			happyImageView.image = UIImage(named: "happy")
 			
 			let mehTextLayer = CATextLayer()
-			if self.mehPercString.count > 3 {
+			if self.mehPercString.count > 4 {
 				let mehIndex = self.mehPercString.index(self.mehPercString.startIndex, offsetBy: 4)
 				mehTextLayer.string = self.mehPercString.prefix(upTo: mehIndex) + "%"
 			} else {
@@ -140,7 +142,7 @@ class SentimentAnalyserViewController: UIViewController {
 			mehImageView.image = UIImage(named: "neutral")
 			
 			let sadTextLayer = CATextLayer()
-			if self.sadPercString.count > 3 {
+			if self.sadPercString.count > 4 {
 				let sadIndex = self.sadPercString.index(self.sadPercString.startIndex, offsetBy: 4)
 				sadTextLayer.string = self.sadPercString.prefix(upTo: sadIndex) + "%"
 			} else {
