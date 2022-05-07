@@ -131,6 +131,9 @@ class SignUpViewController: UIViewController {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                 let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+				let settingsNavVC = viewController.viewControllers?[2] as! UINavigationController
+				let settingsVC = settingsNavVC.viewControllers.first as! SettingsViewController
+				settingsVC.currentUser = self.user
                 let navVC = viewController.viewControllers?[1] as! UINavigationController
                 let journalEntriesVC = navVC.viewControllers.first as! JournalEntriesViewController
                 journalEntriesVC.currentUser = self.user

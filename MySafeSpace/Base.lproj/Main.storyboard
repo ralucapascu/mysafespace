@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -682,10 +683,10 @@
             </objects>
             <point key="canvasLocation" x="796" y="1716"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="9Op-Tz-ZmO">
             <objects>
-                <viewController id="Hbu-GQ-4u7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsVC" id="Hbu-GQ-4u7" customClass="SettingsViewController" customModule="MySafeSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o2S-v2-IGV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -724,7 +725,10 @@
                             <constraint firstItem="lcn-e2-xk4" firstAttribute="bottom" secondItem="yT6-0B-A18" secondAttribute="bottom" id="aSf-Lm-7sI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="crG-fV-Ovd"/>
+                    <navigationItem key="navigationItem" title="Settings" largeTitleDisplayMode="always" id="crG-fV-Ovd"/>
+                    <connections>
+                        <outlet property="tableView" destination="yT6-0B-A18" id="aBr-q7-i4j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg5-hL-Xcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -880,6 +884,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHc-49-gGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1634.7826086956522" y="2420.7589285714284"/>
+        </scene>
+        <!--Change Password View Controller-->
+        <scene sceneID="MRT-vS-x76">
+            <objects>
+                <viewController storyboardIdentifier="changePassVC" id="rlH-Kq-XiJ" customClass="ChangePasswordViewController" customModule="MySafeSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Fc-d4-uS1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xc4-SA-YYt">
+                                <rect key="frame" x="60.5" y="194" width="293" height="34"/>
+                                <color key="backgroundColor" red="0.041237113399999997" green="0.041237113399999997" blue="0.041237113399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="51o-47-b3w"/>
+                                    <constraint firstAttribute="width" constant="293" id="ASo-3A-Chd"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1C-kx-ulx">
+                                <rect key="frame" x="60.5" y="258" width="293" height="34"/>
+                                <color key="backgroundColor" red="0.041237113399999997" green="0.041237113399999997" blue="0.041237113399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Pph-xp-KDi"/>
+                                    <constraint firstAttribute="width" constant="293" id="xTh-pw-eVj"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJO-65-Gko">
+                                <rect key="frame" x="60.5" y="322" width="293" height="34"/>
+                                <color key="backgroundColor" red="0.041237113399999997" green="0.041237113399999997" blue="0.041237113399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="WyR-jr-96X"/>
+                                    <constraint firstAttribute="height" constant="34" id="kzG-Sa-3zw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT3-nj-ysi">
+                                <rect key="frame" x="117" y="406" width="180" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="djx-4M-dWl"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change password"/>
+                                <connections>
+                                    <action selector="didTapChangePassButton:" destination="rlH-Kq-XiJ" eventType="touchUpInside" id="hYM-DA-359"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j9H-Se-Eav"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oT3-nj-ysi" firstAttribute="top" secondItem="rJO-65-Gko" secondAttribute="bottom" constant="50" id="3pG-HD-205"/>
+                            <constraint firstItem="rJO-65-Gko" firstAttribute="top" secondItem="M1C-kx-ulx" secondAttribute="bottom" constant="30" id="503-Tu-M1R"/>
+                            <constraint firstItem="xc4-SA-YYt" firstAttribute="centerX" secondItem="1Fc-d4-uS1" secondAttribute="centerX" id="GXK-IU-RYl"/>
+                            <constraint firstItem="xc4-SA-YYt" firstAttribute="top" secondItem="j9H-Se-Eav" secondAttribute="top" constant="150" id="R3X-yM-Qxc"/>
+                            <constraint firstItem="rJO-65-Gko" firstAttribute="centerX" secondItem="1Fc-d4-uS1" secondAttribute="centerX" id="eXK-ud-6Lj"/>
+                            <constraint firstItem="oT3-nj-ysi" firstAttribute="centerX" secondItem="1Fc-d4-uS1" secondAttribute="centerX" id="fkM-z9-Q5v"/>
+                            <constraint firstItem="M1C-kx-ulx" firstAttribute="top" secondItem="xc4-SA-YYt" secondAttribute="bottom" constant="30" id="kbu-qS-yv7"/>
+                            <constraint firstItem="M1C-kx-ulx" firstAttribute="centerX" secondItem="1Fc-d4-uS1" secondAttribute="centerX" id="mbT-y4-7IB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="rJO-65-Gko" id="UxU-XS-2G6"/>
+                        <outlet property="newPassword" destination="M1C-kx-ulx" id="0UU-FA-8sc"/>
+                        <outlet property="oldPassword" destination="xc4-SA-YYt" id="Res-qC-5SX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJ6-h3-Cin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-907" y="3092"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="zgk-JH-zbi">
@@ -1241,9 +1323,13 @@
             <objects>
                 <navigationController id="JH3-FR-j7a" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="lem-Zc-pIt"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1G0-Oh-hZj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="1G0-Oh-hZj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Hbu-GQ-4u7" kind="relationship" relationship="rootViewController" id="8jL-ob-3bZ"/>
@@ -1262,6 +1348,9 @@
         <image name="libra" width="1280" height="1069"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

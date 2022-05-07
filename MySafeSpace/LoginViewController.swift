@@ -69,6 +69,9 @@ class LoginViewController: UIViewController {
                     }
                     
                     let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+					let settingsNavVC = viewController.viewControllers?[2] as! UINavigationController
+					let settingsVC = settingsNavVC.viewControllers.first as! SettingsViewController
+					settingsVC.currentUser = user!
                     let journalLogsNavVC = viewController.viewControllers?[1] as! UINavigationController
                     let journalEntriesVC = journalLogsNavVC.viewControllers.first as! JournalEntriesViewController
                     journalEntriesVC.currentUser = user
@@ -125,6 +128,9 @@ class LoginViewController: UIViewController {
                 if(password == user?.password) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+						let settingsNavVC = viewController.viewControllers?[2] as! UINavigationController
+						let settingsVC = settingsNavVC.viewControllers.first as! SettingsViewController
+						settingsVC.currentUser = user!
                         let navVC = viewController.viewControllers?[1] as! UINavigationController
                         let journalEntriesVC = navVC.viewControllers.first as! JournalEntriesViewController
                         journalEntriesVC.currentUser = user
@@ -161,6 +167,10 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginButtonDelegate {
 	
+	func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+		
+	}
+	
 	func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
 		let token = result?.token?.tokenString
 		let request = FBSDKLoginKit.GraphRequest(graphPath: "me", parameters: ["fields": "email, first_name, last_name"], tokenString: token, version: nil, httpMethod: .get)
@@ -180,6 +190,9 @@ extension LoginViewController: LoginButtonDelegate {
 				}
 				
 				let viewController = self.storyboard?.instantiateViewController(withIdentifier: "homepageTabBarController") as! UITabBarController
+				let settingsNavVC = viewController.viewControllers?[2] as! UINavigationController
+				let settingsVC = settingsNavVC.viewControllers.first as! SettingsViewController
+				settingsVC.currentUser = user!
 				let journalLogsNavVC = viewController.viewControllers?[1] as! UINavigationController
 				let journalEntriesVC = journalLogsNavVC.viewControllers.first as! JournalEntriesViewController
 				journalEntriesVC.currentUser = user
@@ -192,10 +205,6 @@ extension LoginViewController: LoginButtonDelegate {
 			}
 		})
 		
-	}
-	
-	func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-		print("logged out")
 	}
 }
 

@@ -13,6 +13,7 @@
 		700B076D2826BE610025D49E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B076C2826BE610025D49E /* WebViewViewController.swift */; };
 		700B076F2826C2D20025D49E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */; };
 		700B07712826C31D0025D49E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B07702826C31D0025D49E /* SettingsViewController.swift */; };
+		700B07732826D2170025D49E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B07722826D2170025D49E /* ChangePasswordViewController.swift */; };
 		700C8A462823D14F00090E18 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C8A452823D14F00090E18 /* HoroscopeViewController.swift */; };
 		70332FC828228697000A9A39 /* HoroscopesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC728228697000A9A39 /* HoroscopesViewController.swift */; };
 		70332FCA2822911C000A9A39 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70332FC92822911C000A9A39 /* Horoscope.swift */; };
@@ -51,6 +52,7 @@
 		700B076C2826BE610025D49E /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		700B07702826C31D0025D49E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		700B07722826D2170025D49E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		700C8A452823D14F00090E18 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
 		70332FC728228697000A9A39 /* HoroscopesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopesViewController.swift; sourceTree = "<group>"; };
 		70332FC92822911C000A9A39 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				70D054B928007B5B003E0B28 /* ViewController.swift */,
 				70D054BB28007B5B003E0B28 /* Main.storyboard */,
 				700B07702826C31D0025D49E /* SettingsViewController.swift */,
+				700B07722826D2170025D49E /* ChangePasswordViewController.swift */,
 				700B076E2826C2D20025D49E /* SettingsTableViewCell.swift */,
 				700B076C2826BE610025D49E /* WebViewViewController.swift */,
 				70597BD22825387500AAA319 /* PhotoCollectionViewCell.swift */,
@@ -313,6 +316,7 @@
 				700B076D2826BE610025D49E /* WebViewViewController.swift in Sources */,
 				7047F35A2815DF580025ABE7 /* HomePageViewController.swift in Sources */,
 				70597BCC2825118D00AAA319 /* JournalGalleryViewController.swift in Sources */,
+				700B07732826D2170025D49E /* ChangePasswordViewController.swift in Sources */,
 				70A415CD281941E900F42E2F /* JournalEntriesViewController.swift in Sources */,
 				70597BD32825387500AAA319 /* PhotoCollectionViewCell.swift in Sources */,
 				705293F728168F6000D84652 /* JournalEntry.swift in Sources */,
