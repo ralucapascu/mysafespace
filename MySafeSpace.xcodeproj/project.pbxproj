@@ -238,15 +238,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		700B07832826F88C0025D49E /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				70D054BB28007B5B003E0B28 /* Main.storyboard */,
-				70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		70597BCD28251E4000AAA319 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +271,6 @@
 		70D054B428007B5B003E0B28 /* MySafeSpace */ = {
 			isa = PBXGroup;
 			children = (
-				700B07832826F88C0025D49E /* Storyboards */,
 				700B07822826F7CF0025D49E /* Resources */,
 				700B07752826F5300025D49E /* Views */,
 				700B07742826F48E0025D49E /* Controllers */,
@@ -289,6 +279,8 @@
 				70D054B528007B5B003E0B28 /* AppDelegate.swift */,
 				70D054B728007B5B003E0B28 /* SceneDelegate.swift */,
 				70D054BE28007B5B003E0B28 /* Assets.xcassets */,
+				70D054BB28007B5B003E0B28 /* Main.storyboard */,
+				70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */,
 				70D054C328007B5B003E0B28 /* Info.plist */,
 			);
 			path = MySafeSpace;
