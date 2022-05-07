@@ -1,6 +1,9 @@
 # MySafeSpace
 MySafeSpace is a private diary iOS app which is focused on aspects of mental health and well being too.
 
+## Installation and running
+Please do a pod install before you run the app.
+
 # Features
 ## Login and Sign up
 ### Sign up screen
