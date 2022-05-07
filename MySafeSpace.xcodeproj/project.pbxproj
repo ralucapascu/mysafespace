@@ -41,7 +41,6 @@
 		70D054BF28007B5B003E0B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D054BE28007B5B003E0B28 /* Assets.xcassets */; };
 		70D054C228007B5B003E0B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D054C028007B5B003E0B28 /* LaunchScreen.storyboard */; };
 		70D37C77281BFCDD0053FC79 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */; };
-		70D37C7C281C16A50053FC79 /* music_meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70D37C7B281C16A50053FC79 /* music_meditation.mp3 */; };
 		DFC660A5B6B179A6B5845554 /* Pods_MySafeSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6559C9873489782BBEB067 /* Pods_MySafeSpace.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +81,6 @@
 		70D054C128007B5B003E0B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D054C328007B5B003E0B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70D37C76281BFCDD0053FC79 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
-		70D37C7B281C16A50053FC79 /* music_meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music_meditation.mp3; sourceTree = "<group>"; };
 		8B142799ED89734CFDBA6410 /* Pods-MySafeSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySafeSpace.release.xcconfig"; path = "Target Support Files/Pods-MySafeSpace/Pods-MySafeSpace.release.xcconfig"; sourceTree = "<group>"; };
 		BC6559C9873489782BBEB067 /* Pods_MySafeSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySafeSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14B901592DD7953DF1B4776 /* Pods-MySafeSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySafeSpace.debug.xcconfig"; path = "Target Support Files/Pods-MySafeSpace/Pods-MySafeSpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				70597BCD28251E4000AAA319 /* Models */,
-				70D37C7B281C16A50053FC79 /* music_meditation.mp3 */,
 				7072554C2810A05000B8A7EC /* GoogleService-Info.plist */,
 				70D054B528007B5B003E0B28 /* AppDelegate.swift */,
 				70D054B728007B5B003E0B28 /* SceneDelegate.swift */,
@@ -246,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70D37C7C281C16A50053FC79 /* music_meditation.mp3 in Resources */,
 				70D054C228007B5B003E0B28 /* LaunchScreen.storyboard in Resources */,
 				700B076B28268AEE0025D49E /* howToRelax.mp4 in Resources */,
 				7072554D2810A05000B8A7EC /* GoogleService-Info.plist in Resources */,

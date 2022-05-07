@@ -12,7 +12,7 @@ class JournalEntryViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     
-    var journalEntry: JournaEntry!
+    var journalEntry: JournalEntry!
     
     override func viewDidLoad() {
         super.viewDidLoad()

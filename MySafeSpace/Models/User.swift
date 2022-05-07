@@ -13,5 +13,5 @@ class User: Object {
     @Persisted var password: String = ""
     @Persisted var firstName: String = ""
     @Persisted var lastName: String = ""
-    @Persisted var journalEntries = RealmSwift.List<JournaEntry>()
+    @Persisted var journalEntries = RealmSwift.List<JournalEntry>()
 }

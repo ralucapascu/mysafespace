@@ -13,7 +13,7 @@ class JournalGalleryViewController: UIViewController {
 	@IBOutlet weak var galleryCollectionView: UICollectionView!
 	@IBOutlet weak var label: UILabel!
 	
-	public var journalEntry: JournaEntry!
+	public var journalEntry: JournalEntry!
 	
 	private let storage = Storage.storage().reference()
 	

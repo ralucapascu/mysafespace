@@ -117,6 +117,16 @@ class SignUpViewController: UIViewController {
         
         if(!isAnyFieldEmpty) {
             errorLabel?.isHidden = true
+			
+			// see if the user already exists
+			let existingUser = realm.object(ofType: User.self, forPrimaryKey: email)
+			
+			if existingUser != nil {
+				let alert = UIAlertController(title: "Account already exists", message: "There is already an existing account for the email \(email)", preferredStyle: .alert)
+				alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+				self.present(alert, animated: true, completion: nil)
+				return
+			}
             
             // add new user to the database
             try! realm.write {

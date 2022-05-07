@@ -11,5 +11,5 @@ import RealmSwift
 class Photo: Object {
 	@Persisted var journalId: Int = 0
 	@Persisted var photoDescription: String = ""
-	@Persisted(originProperty: "journalPhotos") var journal: LinkingObjects<JournaEntry>
+	@Persisted(originProperty: "journalPhotos") var journal: LinkingObjects<JournalEntry>
 }

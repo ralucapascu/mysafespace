@@ -86,7 +86,7 @@ class NewJournalEntryViewController: UIViewController, UITextViewDelegate {
             let date = Date()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy"
-            let journalEntry = JournaEntry()
+            let journalEntry = JournalEntry()
 			journalEntry.journalId = currentUser.journalEntries.count
             journalEntry.title = title
             journalEntry.text = text
